@@ -1,0 +1,387 @@
+/* Inline <style> blocks after the Swiper stylesheet (head, then page embeds in DOM order) */
+/* inline <style> #6 (head) */
+.feature-card {
+  transition:
+    transform 200ms ease,
+    background-color 200ms ease,
+    box-shadow 200ms ease;
+}
+
+.card-label,
+.card-label-arrow {
+  transition: color 200ms ease, transform 200ms ease;
+}
+
+.card-label-arrow {
+  display: inline-block;
+}
+
+/* Desktop and hover-capable devices only */
+@media (hover: hover) and (pointer: fine) {
+  .feature-card:hover {
+    transform: translateY(-6px);
+    background-color: #ffffff;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.1);
+  }
+
+  .feature-card:hover .card-label,
+  .feature-card:hover .card-label-arrow {
+    color: #000000;
+  }
+
+  .feature-card:hover .card-label-arrow {
+    transform: translateX(6px);
+  }
+}
+
+
+/* inline <style> #7 (head) */
+/* Background canvas currently used on the homepage */
+  .c-background-canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  /* Keep Swiper cards at their natural content height */
+  .swiper-slide {
+    height: auto !important;
+  }
+
+
+/* inline <style> #8 (body) */
+.cc-navigation.w-container::before,
+.cc-navigation.w-container::after {
+  display: none !important;
+}
+.dropdown-icon {
+  transition: transform 0.3s ease;
+}
+
+.w-dropdown-toggle[aria-expanded="true"] .dropdown-icon {
+  transform: rotate(180deg) !important;
+}
+@media screen and (max-width: 991px) {
+.c-nav-link.w--open {
+    border-bottom: none;
+}
+}
+.c-nav-link.w--open {
+font-weight: 400 !important;
+  
+}
+  .c-nav-mobile-menu-icon-close {
+  display: none;
+}
+
+.c-nav-mobile-menu-icon-open {
+  display: block;
+}
+
+.c-nav-mobile-menu.w--open .c-nav-mobile-menu-icon-close {
+  display: block;
+}
+
+.c-nav-mobile-menu.w--open .c-nav-mobile-menu-icon-open {
+  display: none;
+}
+
+  .w-nav-button.w--open{
+    background-color: transparent !important;
+}
+
+
+/* inline <style> #9 (body) */
+.gradient-hero-fallback {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: radial-gradient(60% 70% at 10% 90%, rgba(254, 212, 75, 0.85), rgba(254, 212, 75, 0) 60%), radial-gradient(60% 70% at 90% 95%, rgba(254, 212, 75, 0.7), rgba(254, 212, 75, 0) 60%), radial-gradient(70% 70% at 50% 40%, #f1f1ef, transparent 80%), #f1f1ef;
+  }
+
+
+/* inline <style> #10 (body) */
+.c-light-glass-card.cc-gradient-border {
+    position: relative;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .c-light-glass-card.cc-gradient-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.52) 33%,
+      rgba(255, 255, 255, 0.32) 66%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    pointer-events: none;
+
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+
+
+/* inline <style> #11 (body) */
+.swiper-pagination {
+    position: relative;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+  }
+
+  .swiper-pagination-bullet {
+
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #D1D5DB;
+    opacity: 1;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+  }
+
+  .swiper-pagination-bullet-active {
+
+    width: 24px;
+
+    border-radius: 4px;
+
+    background-color: #111111;
+
+  }
+
+
+/* inline <style> #12 (body) */
+.cc-overflow-cards .swiper-pagination.swiper-pagination-bullets {
+  position: relative !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: fit-content !important;
+  max-width: fit-content !important;
+  margin-top: 24px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  background-color: rgba(244, 244, 244, 1);
+  border-radius: 999px;
+  padding: 8px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 991px) {
+  .cc-overflow-cards .swiper-pagination.swiper-pagination-bullets {
+    display: flex;
+  }
+}
+
+.cc-overflow-cards .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background-color: rgba(217, 217, 217, 1);
+  opacity: 1;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 0 !important;
+}
+
+.cc-overflow-cards .swiper-pagination-bullet-active {
+  width: 28px;
+  height: 10px;
+  border-radius: 999px;
+  background-color: rgba(124, 124, 124, 1);
+}
+
+
+/* inline <style> #13 (body) */
+.cc-case-studies .swiper-button-next,
+.cc-case-studies .swiper-button-prev {
+  position: relative !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(244, 244, 244, 1);
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cc-case-studies .swiper-button-next:hover,
+.cc-case-studies .swiper-button-prev:hover {
+  background-color: rgba(220, 220, 220, 1);
+}
+/* Remove default Swiper arrow */
+.cc-case-studies .swiper-button-next::after,
+.cc-case-studies .swiper-button-prev::after {
+  display: none;
+}
+/* Prev arrow */
+.cc-case-studies .swiper-button-prev {
+  background-image: url("/assets/6a24400f3546e70bdf952b52_arrow-left-line.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+}
+/* Next arrow — same SVG rotated 180deg */
+.cc-case-studies .swiper-button-next {
+  background-image: url("/assets/6a24400f3546e70bdf952b52_arrow-left-line.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+  transform: rotate(180deg);
+}
+
+  .swiper-button-prev, .swiper-button-next {
+    top: 8px;}
+
+
+/* inline <style> #14 (body) */
+.cc-case-studies .swiper-pagination.swiper-pagination-bullets {
+  position: relative !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: fit-content !important;
+  max-width: fit-content !important;
+  margin-bottom: 24px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  background-color: rgba(244, 244, 244, 1);
+  border-radius: 999px;
+  padding: 8px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+  .cc-case-studies .swiper-pagination.swiper-pagination-bullets {
+    display: flex;
+  }
+.cc-case-studies .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background-color: rgba(217, 217, 217, 1);
+  opacity: 1;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 0 !important;
+}
+.cc-case-studies .swiper-pagination-bullet-active {
+  width: 28px;
+  height: 10px;
+  border-radius: 999px;
+  background-color: rgba(124, 124, 124, 1);
+}
+
+
+/* inline <style> #15 (body) */
+.swiper-pagination {
+    position: relative;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #D1D5DB;
+    opacity: 1;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 24px;
+    border-radius: 4px;
+    background-color: #111111;
+  }
+
+
+/* inline <style> #16 (body) */
+/* Prevent the moving track from overflowing the section */
+  .c-infinite-logos-wrapper {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  /*
+    max-content keeps the full track width.
+    flex: 0 0 auto prevents logos from shrinking on mobile.
+  */
+  .c-infinite-logos-track {
+    display: flex;
+    width: max-content;
+    flex-wrap: nowrap;
+    will-change: transform;
+  }
+
+  .c-infinite-logos-track > * {
+    flex: 0 0 auto;
+  }
+
+  .c-infinite-logos-track.is-marquee-ready {
+    animation: infinite-scroll 30s linear infinite;
+  }
+
+  .c-infinite-logos-track:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes infinite-scroll {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(
+        calc(-1 * var(--marquee-distance))
+      );
+    }
+  }
+
+
+/* inline <style> #17 (body) */
+.code-block {
+    background: transparent !important;}
+  code.language-cpp {
+    padding: 0px !important;
+}
+  span.comment.linenumber.react-syntax-highlighter-line-number {
+    text-align: left !important;
+}
+  pre.code-block.cc-full-width.cc-decorative.w-code-block {
+    padding: 0px !important;
+}
+.c-gradient-text {
+  background: linear-gradient(
+    135deg,
+    #ffd208 0%,
+    #ffffff 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

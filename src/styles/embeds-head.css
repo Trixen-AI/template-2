@@ -1,0 +1,42 @@
+/* Inline <style> blocks from <head>, before the Swiper stylesheet */
+/* inline <style> #2 (head) */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .cc-text-gradient-warm {
+    background: linear-gradient(90deg, #FFEFA7 0%, #FFB574 32%, #F3F5FC 73%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block;
+  }
+
+
+/* inline <style> #3 (head) */
+code[class*="language-"],
+  pre[class*="language-"] {
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 12px !important;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    tab-size: 4;
+    hyphens: none;
+  }
+
+
+/* inline <style> #4 (head) */
+:root {
+  color-scheme: light only !important;
+}
+html, body {
+  background-color: #ffffff !important;
+}
+
